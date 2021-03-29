@@ -1,9 +1,9 @@
-# 目錄
-  * 一般屬性
+# <a name='toc'>目錄</a>
+  * [一般屬性](#general-property)
   * BOX MODEL
   * CASCADE、inheritance 級聯和繼承
 
-# 一般屬性
+# <a name='general-property'>一般屬性</a>
 ## 1.box-sizing 所有可設定width、height對象
 	value有content-box、border-box，
 	1. content-box為預設不需要特別宣告，設定width和height可直接更改content area範圍
