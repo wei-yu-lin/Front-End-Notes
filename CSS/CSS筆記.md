@@ -1,7 +1,7 @@
 # <a name='toc'>目錄</a>
-  * [一般屬性](#general-property)
-  * BOX MODEL
-  * CASCADE、inheritance 級聯和繼承
+  1. [一般屬性](#general-property)
+  1. [BOX MODEL](#general-MODEL)
+  1. [CASCADE、inheritance 級聯和繼承](#CASCADE-inheritance)
 
 # <a name='general-property'>一般屬性</a>
 ## 1.box-sizing 所有可設定width、height對象
@@ -11,7 +11,7 @@
 ## 2.overflow 
 	希望限制在某個範圍內，避免破壞版面配置的時候
 
-# BOX MODEL
+# <a name='general-MODEL'>BOX MODEL</a>
 ## 1.布局流 (Normal flow)
 	1. display:inline 用來定義元素在同一行呈現，也就是圖片或文字均不換行的意思
 	2. display block 規定元素以區塊方式呈現
@@ -29,6 +29,6 @@
 		- 父元素跟最後一個子元素的margin-bottom。
 	3. 重疊後的值會取大的margin值。
 	
-# CASCADE、inheritance
+# <a name='CASCADE-inheritance'>CASCADE、inheritance</a>
    ## inheritance
       1.子元素會繼承父元素的屬性
