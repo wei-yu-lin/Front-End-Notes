@@ -12,7 +12,45 @@
 	希望限制在某個範圍內，避免破壞版面配置的時候
 
 ## 3.Display
- 
+## 4.background
+1.背景圖片 background-image
+ 大圖像不會按比例縮小以適合該框，只會看到它的一個小角，而小圖像則被平鋪以填充該框。
+>控制背景重複(background-repeat)
+* no-repeat -停止完全重複背景。
+* repeat-x —水平重複。
+* repeat-y —垂直重複。
+* repeat—默認值；雙向重複。
+>調整背景圖片的大小(background-size)
+* cover 完全覆蓋方框區域，同時仍保留其寬高比(部分圖像可能會出現在盒子外面)
+* contain 圖像大小合適以適合盒子內的大小(如果圖像的高寬比與盒子的高寬比不同，最終可能會在圖像的兩側或頂部和底部出現間隙)
+>定位背景圖片(background-position)
+
+background-position值有兩個單獨的值-水平值，然後是垂直值。
+
+` background-position: 20px 10%;`
+
+也可以使用4值語法來指示距框的某些邊緣的距離-在這種情況下，長度單位是其前一個值的偏移量 
+
+` background-position: top 20px right 10px; `
+2.背景漸進色(background:gradient)
+3.背景附件(background-attachment)
+## 5.border
+**border基本用法** 
+` border: 5px solid #0b385f; `
+
+等於
+
+` border-width: 1px;
+  border-style: solid;
+  border-color: black; `
+**border進階>>圓角**
+border-radius:左上角、右上角、右下角、左下角 ` border-radius:10px 10px 20px 20px `
+border-radius:(左上角、右下角)、(右上角、左下角) `border-radius: 10px 20px`
+## 6.圖片調整相關	
+1.object-fit
+* cover 完全覆蓋方框區域，同時仍保留其寬高比(部分圖像可能會出現在盒子外面)
+* contain 圖像大小合適以適合盒子內的大小(如果圖像的高寬比與盒子的高寬比不同，最終可能會在圖像的兩側或頂部和底部出現間隙)
+
 # <a name='general-MODEL'>BOX MODEL</a>
 ## 1.布局流 (Normal flow)
 	1. display:inline 用來定義元素在同一行呈現，也就是圖片或文字均不換行的意思
@@ -51,10 +89,12 @@
 	  2.當specificity(特異性)越高，代表有重複衝突的屬性就被優先選取。
 	    計算specificity的分數，共有分4種不同的值
 		1. 千：如果聲明位於style屬性（也稱為內聯樣式）內，則在此列中得分一。這樣的聲明沒有選擇器，因此它們的特異性始終為1000。
-		2. 百：選擇器中包含的每個ID選擇器。
-		3. 十：選擇器中包含的每個類選擇器，屬性選擇器或偽類。
-		4. 個位數：選擇器中包含的元素選擇器或偽元素。
+		2. 百：選擇器中包含的每個ID選擇器(#id)。
+		3. 十：選擇器中包含的每個類選擇器(class)，屬性選擇器或偽類。
+		4. 個位數：選擇器中包含的元素選擇器(tag)或偽元素。
+![Image](https://github.com/wei-yu-lin/HTML/blob/master/CSS/css-spectifity.png)
 
-
+	   3.打破級聯常規的語法 !Important
+		
 
 	
