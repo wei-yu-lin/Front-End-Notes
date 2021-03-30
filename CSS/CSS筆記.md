@@ -36,6 +36,8 @@ background-position值有兩個單獨的值-水平值，然後是垂直值。
 3.背景附件(background-attachment)
 ## 5.border
 **border基本用法** 
+1.border : 圍住Model box框的線
+
 ` border: 5px solid #0b385f; `
 
 等於
@@ -43,13 +45,28 @@ background-position值有兩個單獨的值-水平值，然後是垂直值。
 ` border-width: 1px;
   border-style: solid;
   border-color: black; `
+  
+2.border-collapse : 用來將表格欄位邊框合併
+ 
+* separate : 預設值，邊框彼此間分開
+* collapse : 邊框合併為單一邊框
+* inherit : 繼承自父層的 border-collapse 屬性值
+  
 **border進階>>圓角**
+
 border-radius:左上角、右上角、右下角、左下角 ` border-radius:10px 10px 20px 20px `
+
 border-radius:(左上角、右下角)、(右上角、左下角) `border-radius: 10px 20px`
+
 ## 6.圖片調整相關	
 1.object-fit
 * cover 完全覆蓋方框區域，同時仍保留其寬高比(部分圖像可能會出現在盒子外面)
 * contain 圖像大小合適以適合盒子內的大小(如果圖像的高寬比與盒子的高寬比不同，最終可能會在圖像的兩側或頂部和底部出現間隙)
+
+## 7.tables調整相關
+1.table-layout 調整table佈局
+* auto : 一般table默認的情況，會自動調整table和row的寬度
+* fixed : col和table的寬度，由table和col元素的寬度或單元格第一行的寬度設置
 
 # <a name='general-MODEL'>BOX MODEL</a>
 ## 1.布局流 (Normal flow)
