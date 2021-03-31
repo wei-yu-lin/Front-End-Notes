@@ -68,6 +68,26 @@ border-radius:(左上角、右下角)、(右上角、左下角) `border-radius: 
 * auto : 一般table默認的情況，會自動調整table和row的寬度
 * fixed : col和table的寬度，由table和col元素的寬度或單元格第一行的寬度設置
 
+## 8.text-decoration 文字底線
+#### Value
+* none (無效果)
+* overline (頂線)
+* line-through (中線/刪除線)
+* underline (底線)
+* inherit (繼承)
+#### 相關語法
+* text-decoration-line (線段位置)
+* text-decoration-color (線段色彩)
+* text-decoration-style (線段樣式)
+
+<pre><code>
+  text-decoration-color: red ;
+  text-decoration-style: dotted;  
+  text-decoration-line: underline;
+  也可以直接設定
+  text-decoration: underline red dotted;
+ </code></pre>
+
 # <a name='general-MODEL'>BOX MODEL</a>
 ## 1.布局流 (Normal flow)
 	1. display:inline 用來定義元素在同一行呈現，也就是圖片或文字均不換行的意思
