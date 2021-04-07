@@ -2,6 +2,7 @@
   1. [一般屬性](#general-property)
   1. [BOX MODEL](#general-MODEL)
   1. [CASCADE、inheritance 級聯和繼承](#CASCADE-inheritance)
+  1. [elements元素](#basic-elements)
 
 # <a name='general-property'>一般屬性</a>
 ## 1.box-sizing 所有可設定width、height對象
@@ -133,5 +134,14 @@ border-radius:(左上角、右下角)、(右上角、左下角) `border-radius: 
 
 	   3.打破級聯常規的語法 !Important
 		
-
-	
+# <a name='basic-elements'>elements元素</a>
+  ## Replaced elements
+> 替換元素是不在CSS範圍的元素；它們是外部對象，其表示獨立於CSS格式模型(independent of the CSS formatting model)
+>> ex:<iframe>、<video>、<embed>、<img>
+  ## Pseudo-elements
+> CSS偽元素是添加到選擇器的關鍵字，可用於設置所選元素的特定部分的樣式。
+>> selector::pseudo-element {
+  property: value;
+}
+* ::before : 在元素的前面動作
+* ::after : 在元素的後面動作
